@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Showcase Lab & LCH Colors</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+
+  
+  
+  <div class="know-it-all">
+
+  <div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      Leticia Fernandes
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="#" target="_blank">Pretend</a>
+    <a href="#" target="_blank">TheseAre</a>
+    <a href="#" target="_blank">Other</a>
+    <a href="#" target="_blank">Fun</a>
+    <a href="#" target="_blank">Links</a>
+  </div>
+</div>
+
+
+  <section class="top-title-section">
+    <div class="extra-space"></div>
+      <div class="h1-wrapper">
+        <div class="center-style second-h1-wrapper">
+        <h1>Defining Colors in CSS</h1>
+      </div>
+      </div>
+  </section>
+
+  <div class="extra-space-2"></div>
+  <main>
+    <div class="extra-space-3"></div>
+    <div class="main-wrapper center-style">
+      <aside>
+        <nav class="nav-2">
+          <h3>Your Color Adventure</h3>
+          <a href="#introduction" class="nav-2-a-tag">Introduction</a>
+          <a href="#named-colors" class="nav-2-a-tag">Named colors</a>
+          <a href="#RGB" class="nav-2-a-tag">RGB</a>
+          <a href="#HEX" class="nav-2-a-tag">Hex codes</a>
+          <a href="#HSL" class="nav-2-a-tag">HSL</a>
+          <a href="#C3-color-formats" class="nav-2-a-tag">C3 color formats</a>
+          <a href="#display-p3" class="nav-2-sub">Display P3</a>
+          <a href="#LCH" class="nav-2-sub">LAB & LCH</a>
+        </nav>
+        </aside>
+      <article>
+        <h2 class="special-h2-style"><a id="introduction"></a></h2>
+        <p class="p-styles">CSS (Cascading Style Sheets) has introduced new color formats that allow web designers and developers to create more complex and sophisticated color effects on their web pages.</p>
+        <p class="p-styles">These new formats include CSS variables, which allow for the creation of dynamic, reusable color themes that can be updated across an entire website with a single change. Additionally, CSS4 has introduced the Lab and LCH color spaces, which provide more precise and predictable color rendering on different devices and screens.</p>
+        <p class="p-styles">Another new color format is the functional notation, which allows for the creation of custom color functions that can be used to generate complex color schemes and effects. With these new CSS color formats, web designers and developers have more flexibility and control over the appearance of their web pages, making it easier to create visually stunning and engaging user experiences.</p>
+        <h2>
+          <a id="named-colors"></a>Named colors</h2>
+        <p class="p-styles">Let's start from the beginning.</p>
+        <p class="p-styles">HTML comes with 140 pre named colors. Some very special ones such as <code class="highlighted-text">darkgoldenrod</code>, <code class="highlighted-text">mintcream</code>, and <code class="highlighted-text">cornflowerblue</code>:</p>
+          <div>
+            <p class="codepen" data-height="305.6953125" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="YzOQmVx" data-editable="true" data-user="duffelbagteesh" style="height: 305.6953125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/duffelbagteesh/pen/YzOQmVx">
+              code-pen-embed-ex</a> by duffelbagteesh (<a href="https://codepen.io/duffelbagteesh">@duffelbagteesh</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+          </div>
+        <h2><a id="RGB">RGB Colors</a></h2>
+                  <p class="p-styles">So here is what we all started with:</p>
+                    <span class="special-span"></span>
+                    <div class="container center-style">
+                      <div>
+                    
+                        <div class="r circle"></div>
+                        <div class="g circle"></div>
+                        <div class="b circle"></div>
+                      </div>
+                    </div>
+
+                    <div class="outter-rgb-example-container">
+                      <div class="sliders-container picker">
+                        <div class="bar-and-label">
+                          <div class="label">
+                            <label for="slider-:R555aim:" class="sc-e31036c1-2 krOFoZ">Red</label>
+                            <div class="output-red">255</div>
+                          </div>
+                          <button style="background:linear-gradient(90deg, rgb(0 0 0), rgb(28.333333333333332 0 0), rgb(56.666666666666664 0 0), rgb(85 0 0), rgb(113.33333333333333 0 0), rgb(141.66666666666669 0 0), rgb(170 0 0), rgb(198.33333333333334 0 0), rgb(226.66666666666666 0 0), rgb(255 0 0))" class="color-class">
+                            <input type="range" class="red" value="0" max="255" style="background-color:transparent ;">
+                          </button>
+                        </div>
+                        
+                        <div class="bar-and-label">
+                          <div class="label">
+                            <label for="slider-:R955aim:" class="sc-e31036c1-2 krOFoZ">Green</label>
+                            <div class="output-green">0</div>
+                          </div>
+                          <button style="background:linear-gradient(90deg, rgb(0 0 0), rgb(0 28.333333333333332 0), rgb(0 56.666666666666664 0), rgb(0 85 0), rgb(0 113.33333333333333 0), rgb(0 141.66666666666669 0), rgb(0 170 0), rgb(0 198.33333333333334 0), rgb(0 226.66666666666666 0), rgb(0 255 0))" class="color-class">
+                            <input type="range" class="green" value="0" max="255" style="background-color:transparent ;">
+                            </button>
+                          </div>
+                          
+                          <div class="bar-and-label">
+                            <div class="label">
+                              <label for="slider-:Rd55aim:" class="sc-e31036c1-2 krOFoZ">Blue</label>
+                              <div class="output-blue">0</div>
+                            </div>
+                            <button style="background:linear-gradient(90deg, rgb(0 0 0), rgb(0 0 28.333333333333332), rgb(0 0 56.666666666666664), rgb(0 0 85), rgb(0 0 113.33333333333333), rgb(0 0 141.66666666666669), rgb(0 0 170), rgb(0 0 198.33333333333334), rgb(0 0 226.66666666666666), rgb(0 0 255))" class="color-class">
+                              <input type="range" class="blue" value="0" max="255" style="background-color:transparent ;">
+                            </button>
+                          </div>
+                        </div>
+                        
+                        <div class="color-result-card">
+                          <div style="background-color: rgb(255, 0, 0);" class="result">
+                          </div>
+                          <div class="sc-988f12aa-0 ECbjq">rgb(<span class="output-red">255</span>&nbsp;<span class="output-green">0</span>&nbsp;<span class="output-blue">0</span>);</div>
+                        </div>
+                      </div>
+
+                      <p class="p-styles">We have now gotten to point where we are very familiar with the <code class="highlighted-text">rgb</code> color format.</p>
+                      <p class="p-styles">The <code class="highlighted-text">rgb</code> color format is an additive color model, meaning that when you add together different 
+                        amounts of red, green, and blue light, you can create any color visible to the human eye.</p>
+                        <p class="p-styles">Where 'red', 'green', and 'blue' are values ranging from 0 to 255, representing the intensity of each color component. For example:</p>
+                        <p class="codepen" data-height="310.23046875" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="WNgEWJY" data-editable="true" data-user="duffelbagteesh" style="height: 310.23046875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                          <span>See the Pen <a href="https://codepen.io/duffelbagteesh/pen/WNgEWJY">
+                          rgb-example</a> by duffelbagteesh (<a href="https://codepen.io/duffelbagteesh">@duffelbagteesh</a>)
+                          on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <span class="special-span"></span>
+                        <p class="p-styles" style="margin-top:30px ;">We also have been implementing a new notation, with an additional 4th optional value for opacity (alpha) giving us a new and improved RGBA </p>
+                        <p class="p-styles">Where 'alpha' is a value between 0 and 1, representing the opacity of the color. A value of 0 would be completly transparent, while a value of 1 would be completly opaque.</p>
+                        <p class="p-styles">This changed in CSS Colors level 4, which introduces a standardized notation used across newer color formats. <code class="highlighted-text">rgba()</code> isn't explicitly deprecated, but it's recommended to use the newer format (fortunately, <a href="https://caniuse.com/mdn-css_types_color_rgb_alpha_parameter" rel="referrence link" class="hyperlink-style">browser support is excellent</a>).</p>
+
+                  
+
+                
+
+
+                  
+        <h2><a id="HEX">Hex codes</a></h2>
+          <p class="p-styles">This is probably the most used color format on the web due to them being easy to use and understand, and they can be used in many different contexts, such as HTML, JS, and graphic design software.</p>
+            <p class="p-styles">Hex codes are a way to represent colors in CSS using a combination of six 
+            hexadecimal (base 16) digits. Hexadecimal is a numbering system that uses 16 digits, including the numbers 0-9 
+            and the letters A-F, where each digit represents a value between 0 and 15. It looks like this:</p>
+          <p class="codepen" data-height="305.609375" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="NWLvVjQ" data-editable="true" data-user="duffelbagteesh" style="height: 305.609375px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/duffelbagteesh/pen/NWLvVjQ">
+            hex-code-ex</a> by duffelbagteesh (<a href="https://codepen.io/duffelbagteesh">@duffelbagteesh</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <span> </span>
+          <p class="p-styles" style="margin-top:30px ;">Fundamentally, hex codes are the same as RGB values. In both cases, we're providing a value for red, green, and blue.</p>
+          <p class="p-styles">In the example above, we are also passing an eigth digit hex code to include an alpha channel. We're specifying <code class="highlighted-text">80</code> as the alpha channel, which is equivalent to 128 in a decimal system. As a result, the box appears 50% opaque.</p>
+          <p class="p-styles">8-digit hex codes are widely implemented in modern browsers, with <a href="https://caniuse.com/css-rrggbbaa" rel="referrence link" class="hyperlink-style">95.5% global support</a>. Except by IE, RIP.</p>
+          <p class="p-styles">Here are users latest favorite hex code colors</p>
+          <div class="center-style">
+            <img src="../css-showcase-midterm/img/hex-codes-shot.png">
+          </div>
+        
+        <h2><a id="HSL">HSL Colors</a></h2>
+        <p class="p-styles">So far, both of the color formats we have covered are essentially different 'wrappers' on the same fundamental idea of pulling different values for red, green, and blue colors.</p>
+        <p class="p-styles">Let's look at a completly different one: HSL</p>
+
+          <section id="pickerdos">
+            <input type="range" min="0" step="0.1" max="360" id="hsl-h">
+            <input type="range" min="0" step="0.1" max="100" id="hsl-s">
+            <input type="range" min="0" step="0.1" max="100" id="hsl-l">
+            <div id="sample"></div>
+          </section>
+
+
+          <p class="p-styles" style="margin-top:30px ;">This color picker may feel familiar due to being commonly found in graphic design software like Figma or Photoshop</p>
+          <p class="p-styles">HSL stands for 'Hue, Saturation, and Lightness' it utilizes these 3 attributes to define its colors:</p>
+          <p class="p-styles"><em>Hue:</em> Is the actual color of the element. It is represented as an angle between 0 and 360 degrees, where 0 and 360 represent red, 120 represents green, and 240 represents blue.</p>
+          <p class="p-styles"><em>Saturation:</em> refers to the intensity or purity of the color. It is represented as a percentage, where 0% is completly gray (no color), and 100% is the fullest and most vibrant expression of the hue.</p>
+          <p class="p-styles"><em>Lightness:</em> is the brightness of the color, represented as a percentage, where 0% is black, 50% is the normal color, and 100% is white.</p>
+          <p class="p-styles">In a way this is really intuitive way to think about color. Instead of controlling the R,G,B light values directly, we've moved to a higher level of abstraction, one more closely aligned with how humans typically think about color.</p>
+          <p class="codepen" data-height="310.4921875" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="qBMPWbX" data-editable="true" data-user="duffelbagteesh" style="height: 310.4921875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/duffelbagteesh/pen/qBMPWbX">
+            hsl-color-ex</a> by duffelbagteesh (<a href="https://codepen.io/duffelbagteesh">@duffelbagteesh</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <p class="p-styles" style="margin-top:30px ;">One benefit of using HSL colors in CSS is that it allows you to adjust the saturation and 
+            lightness of a color without changing the hue. This can make it easier to create consistent color palettes throughout a design, 
+            and to make subtle adjustments to the color scheme as needed.</p>
+            
+        
+        
+        
+          <h2><a id="C3-color-formats">Mordern color formats</a></h2>
+          <p class="p-styles">So all of the color formats we just refreshed our memories with have been around for a very long time.</p>
+          <p class="p-styles">Although, recently, we have been working on making some of these <em>new</em> color formats hit the browser market for everyone.</p>
+        
+          <h2 class="sub-h2"><a id="display-p3">Display P3</a></h2>
+        <p class="p-styles">So, this is a color space developed by Apple, which is designed to improve the color reproduction of displays, particularly on mobile devices such as iPhones and iPads. It is an extension of the sRGB color space, which is the standard color space used for most web and digital content.</p>
+        <p class="p-styles">The Display P3 color space has a <em>wider</em> color gamut than sRGB, which means it can represent a larger range of colors. This is particularly noticeable in the green and red regions of the color spectrum, where Display P3 can produce more <em>vibrant</em> and <em>saturated</em> colors than sRGB. </p>
+        <div style="margin-bottom:30px ;">
+          <img src="../css-showcase-midterm/img/sRGB-outline.png">
+        </div>
+        <p class="p-styles">Essentially a color space is a collection of available colors, the palettes we have to pick from. There are millions of possible colors in sRGB, but it doesn't come close to capturing the full range of colors the human eye is capable of seeing.</p>
+        <p class="p-styles">P3 extends the standard sRGB color space, giving us access to brighter and more vibrant colors.</p>
+        <p class="p-styles">In CSS, the color <em>space</em> is linked to the color <em>format</em>. If we choose to use the <code class="highlighted-text">rgb()</code>syntax (or hex codes, or <code class="highlighted-text">hsl()</code>, we can only ever specify colors in the sRGB color space.</p>
+        <p class="p-styles">To utilize the P3 color space, we then need to use a different color format: <code class="highlighted-text">color(display-p3 1 0 0);</code></p>
+        <p class="p-styles">The <code class="highlighted-text">color()</code> function takes a color space, and then a set of RGB values. Instead of ranging from 0 to 255, it uses decimal values from 0 to 1.</p>
+        <p class="p-styles"><em>Browser support</em> for this function is very low right now, for it is only <a href="https://caniuse.com/css-color-function" class="hyperlink-style">implemented on Safari</a></p>
+        
+        <h2 class="sub-h2"><a id="LCH">Lab & LCH</a></h2>
+        <p class="p-styles">LCH (lightness, Chroma, Hue) and Lab (lightness, a, b) are two color spaces used in digital imaging.</p>
+        <p class="p-styles">Lab is a three-dimensional color space that is designed to be perceptually uniform, meaning that the distance between two colors in the space roughly corresponds to the perceived difference in color by the human eye. Example:</p>
+        
+        <div class="square-tile-ex-container">
+          <div class="square-tile-ex-inner-container">
+            <div class="square-tile-ex-inner-container-n-text">
+              <div style="background-color:hsl(60deg 100% 50%);" class="square-tile"></div>
+              <caption><code class="highlighted-text">hsl(60deg 100% 50%)</code></caption>
+          </div>
+          <div class="square-tile-ex-inner-container-n-text">
+            <div style="background-color:hsl(240deg 100% 50%);" class="square-tile"></div>
+            <caption><code class="highlighted-text">hsl(240deg 100% 50%)</code></caption>
+          </div>
+          </div>
+        </div>
+
+        <p class="p-styles">As we can see, both of these colors have the same 'lightness' value of 50%. But they don't look equally light, though. They yellow feels way lighter than the blue.</p>
+        <p class="p-styles">The HSL color format is modeled after math/physics. It doesn't take human perception into account. And, it turns out, humans don't perceive colors very accurately.</p>
+        <p class="p-styles">LCH is a color format that aims to be perceptually uniform to humans. Two colors with an equivalent 'lightness' value should feel equally light.</p>
+        <p class="p-styles">Here is an example of what yellow and blue look like at 55% lightness in LCH:</p>
+
+        <div class="square-tile-ex-container">
+          <div class="square-tile-ex-inner-container">
+            <div class="square-tile-ex-inner-container-n-text">
+              <div style="background-color:rgb(56.08% 52.16% 0%);" class="square-tile"></div>
+              <caption><code class="highlighted-text">lch(55% 132 95)</code></caption>
+          </div>
+          <div class="square-tile-ex-inner-container-n-text">
+            <div style="background-color:rgb(28.77% 50.04% 100%);" class="square-tile"></div>
+            <caption><code class="highlighted-text">lch(55% 132 280)</code></caption>
+          </div>
+          </div>
+        </div>
+
+    
+
+        <p class="p-styles">Here is an <a href="https://css.land/lch/" class="hyperlink-style">LCH color picker</a> found on the web from <a href="https://lea.verou.me/2020/04/lch-colors-in-css-what-why-and-how/" class="hyperlink-style">Lea Verou's blog post</a>:</p>
+        <div style="margin-bottom:30px ;">
+          <img src="../css-showcase-midterm/img/lch-browser-diff.png">
+        </div>
+        <p class="p-styles">Unlike the other color formats we spoke about here, LCH is not bound to sRGB. It isn't even bound to P3. It achieves this by <em>not having an upper limit on chroma.</em></p>
+        <p class="p-styles">In HSL, saturation ranges from 0% (no saturation) to 100% (fully saturated). This is possible because we know that we're talking about the sRGB color space, a finite palette of colors.</p>
+        <div style="margin-bottom:30px ;">
+          <img src="../css-showcase-midterm/img/6-modern-css-color.png">
+        </div>
+        <p class="p-styles">But LCH isn't linked to a particular color space, and so we don't know where the upper saturation limit is. It's not static: as display technology continues to improve, we can expect monitors to reach wider and wider gamuts. 
+          LCH will automatically be able to reference these expanded colors by cranking up the chroma. Talk about future-proofing!</p>
+         
+          
+          
+
+      </article>
+    </div>
+    
+    <footer>
+      <p>Thanks for listening/reading</p>
+    </footer>
+  </main>
+</div>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/App.js"></script>
+  <script src="js/main.js"></script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
